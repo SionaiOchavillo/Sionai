@@ -1,0 +1,200 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container for background image */
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(56.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo styles */
+.icon {
+    font-size: 35px;
+    color: mediumslateblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu styles */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: mediumslateblue;
+}
+
+/* Content section styles */
+.content {
+    text-align: center;
+    color: #fff;
+    margin-top: 10%;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 50px;
+    color: floralwhite;
+}
+
+.content h1 span {
+    color: mediumslateblue;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: mediumslateblue;
+    border: transparent;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: white;
+}
+
+.cn:hover {
+    background-color: white;
+    color: mediumslateblue;
+}
+
+/* Login Form */
+.form {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.form h2 {
+    color: white;
+    font-size: 22px;
+    background-color: mediumslateblue;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form input {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    color: black;
+    font-size: 15px;
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form button {
+    width: 100%;
+    height: 40px;
+    background: mediumslateblue;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form button:hover {
+    background: white;
+    color: mediumslateblue;
+}
+
+.form .link {
+    font-family: Arial;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: mediumslateblue;
+}
+
+/* Welcome Page (After successful login) */
+#welcomePage {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+#welcomePage h1 {
+    font-size: 50px;
+    color: mediumslateblue;
+}
+
+/* Optional: Animation on Login Success */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#welcomePage h1 {
+    animation: fadeIn 2s ease-in-out;
+}
